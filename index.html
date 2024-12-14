@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>UOB Students Enrollment by Nationality</title>
+</head>
+//Internal style for the table
+<style>
+    h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #TableBody{
+        border: 2px solid rgb(150, 156, 236);
+        border-collapse: collapse;
+    }
+    td{
+        border: 2px solid rgb(65, 67, 156);
+        text-align: center;
+    }
+    th{
+        background-color: rgb(165, 166, 247);
+        border: 2px solid rgb(65, 67, 156);
+        color: rgb(5, 7, 90);
+        text-align: center;
+    }
+</style>
+//The body and the table
+<body>
+    <main class="Container">
+    <div class="overflow-auto">
+        <h1>University of Bahrain Students Nationality Data Enrollment</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>YEAR</th>
+                    <th>SEMESTER</th>
+                    <th>THE PROGRAM</th>
+                    <th>NATIONALITY</th>
+                    <th>COLLEGES</th>
+                    <th>NUMBER OF STUDENTS</th>
+                </tr>
+            </thead>
+            <tbody id="TableBody">
+            </tbody>
+        </table>
+            </div>
+        </main>
+        // Link the JavaScreip file
+        <script src="apiData.js"></script>
+</body>
+</html>
